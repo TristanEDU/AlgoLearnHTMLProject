@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Footer Examples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hanken Grotesk', sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: #a0a0a0;
+            margin-bottom: 4rem;
+            max-width: 800px;
+        }
+
+        .footer-example {
+            margin-bottom: 6rem;
+            position: relative;
+        }
+
+        .example-label {
+            display: inline-block;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(102, 126, 234, 0.1);
+            border-left: 3px solid #667eea;
+        }
+
+        /* ================================
+           FOOTER STYLE 1: MINIMALIST BOLD
+           ================================ */
+        .footer-1 {
+            background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-1-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-1 .brand {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-1 .tagline {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer-1 h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            color: #667eea;
+        }
+
+        .footer-1 a {
+            color: #e0e0e0;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-1 a:hover {
+            color: #667eea;
+            transform: translateX(5px);
+        }
+
+        .footer-1-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .footer-1 .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-1 .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            margin: 0;
+        }
+
+        .footer-1 .social-links a:hover {
+            border-color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* ================================
+           FOOTER STYLE 2: CENTERED ELEGANT
+           ================================ */
+        .footer-2 {
+            background: #fafafa;
+            color: #1a1a1a;
+            padding: 5rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .footer-2-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-2 .brand {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+        }
+
+        .footer-2 .tagline {
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-2 nav {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-2 nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .footer-2 nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #667eea;
+            transition: width 0.3s ease;
+        }
+
+        .footer-2 nav a:hover {
+            color: #667eea;
+        }
+
+        .footer-2 nav a:hover::after {
+            width: 100%;
+        }
+
+        .footer-2 .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-2 .social-links a {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #1a1a1a;
+            color: #fff;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .footer-2 .social-links a:hover {
+            background: #667eea;
+            transform: scale(1.1);
+        }
+
+        .footer-2 .copyright {
+            color: #999;
+            font-size: 0.9rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        /* ================================
+           FOOTER STYLE 3: SPLIT GRADIENT
+           ================================ */
+        .footer-3 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-3::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.05) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .footer-3-content {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem 3rem;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .footer-3 .cta-section h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .footer-3 .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .footer-3 .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #fff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .footer-3 .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .footer-3 h3 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .footer-3 a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+
+        .footer-3 a:hover {
+            opacity: 1;
+            transform: translateX(5px);
+        }
+
+        .footer-3-bottom {
+            background: rgba(0,0,0,0.2);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* ================================
+           FOOTER STYLE 4: BRUTALIST GRID
+           ================================ */
+        .footer-4 {
+            background: #fff;
+            color: #000;
+            border-top: 8px solid #000;
+            padding: 0;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .footer-4-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border-bottom: 4px solid #000;
+        }
+
+        .footer-4-cell {
+            padding: 3rem 2rem;
+            border-right: 2px solid #000;
+            position: relative;
+        }
+
+        .footer-4-cell:last-child {
+            border-right: none;
+        }
+
+        .footer-4-cell:hover {
+            background: #000;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .footer-4 h3 {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .footer-4 a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+        }
+
+        .footer-4 a:hover {
+            transform: translateX(10px);
+        }
+
+        .footer-4-bottom {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footer-4 .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-4 .social-links a {
+            display: inline-block;
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* ================================
+           RESPONSIVE
+           ================================ */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .footer-1-content,
+            .footer-3-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-2 nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .footer-4-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-4-cell {
+                border-right: none;
+                border-bottom: 2px solid #000;
+            }
+
+            .footer-4-cell:last-child {
+                border-bottom: none;
+            }
+
+            .footer-4-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .footer-1-bottom {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+        }
+
+        /* Scroll animations */
+        .footer-example {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .footer-example:nth-child(2) { animation-delay: 0.1s; }
+        .footer-example:nth-child(3) { animation-delay: 0.2s; }
+        .footer-example:nth-child(4) { animation-delay: 0.3s; }
+        .footer-example:nth-child(5) { animation-delay: 0.4s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio Footer Examples</h1>
+        <p class="intro">
+            Here are four distinct footer styles for your portfolio website. Each has a completely different aesthetic approach—choose the one that matches your personal brand, or use these as inspiration to create your own unique design.
+        </p>
+
+        <!-- FOOTER EXAMPLE 1 -->
+        <div class="footer-example">
+            <div class="example-label">Style 01 — Minimalist Bold</div>
+            <footer class="footer-1">
+                <div class="footer-1-content">
+                    <div>
+                        <div class="brand">Your Name</div>
+                        <p class="tagline">Web developer crafting beautiful, functional experiences. Let's build something amazing together.</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Navigation</h3>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div>
+                        <h3>Connect</h3>
+                        <a href="#linkedin">LinkedIn</a>
+                        <a href="#github">GitHub</a>
+                        <a href="#twitter">Twitter</a>
+                        <a href="mailto:you@email.com">Email</a>
+                    </div>
+                </div>
+                
+                <div class="footer-1-bottom">
+                    <span>© 2024 Your Name. All rights reserved.</span>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Email">@</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- FOOTER EXAMPLE 2 -->
+        <div class="footer-example">
+            <div class="example-label">Style 02 — Centered Elegant</div>
+            <footer class="footer-2">
+                <div class="footer-2-content">
+                    <div class="brand">Your Name</div>
+                    <p class="tagline">Building digital experiences with purpose and precision.</p>
+                    
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#work">Work</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="GitHub">gh</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Email">@</a>
+                    </div>
+                    
+                    <div class="copyright">
+                        © 2024 Your Name. Designed & built with care.
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- FOOTER EXAMPLE 3 -->
+        <div class="footer-example">
+            <div class="example-label">Style 03 — Split Gradient</div>
+            <footer class="footer-3">
+                <div class="footer-3-content">
+                    <div class="cta-section">
+                        <h2>Let's work together</h2>
+                        <p>Have a project in mind? I'm always open to discussing new opportunities.</p>
+                        <a href="#contact" class="cta-button">Get In Touch</a>
+                    </div>
+                    
+                    <div>
+                        <h3>Quick Links</h3>
+                        <a href="#home">Home</a>
+                        <a href="#about">About Me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#resume">Resume</a>
+                    </div>
+                    
+                    <div>
+                        <h3>Social</h3>
+                        <a href="#linkedin">LinkedIn Profile</a>
+                        <a href="#github">GitHub Repos</a>
+                        <a href="#twitter">Twitter Feed</a>
+                        <a href="mailto:you@email.com">Email Me</a>
+                    </div>
+                </div>
+                
+                <div class="footer-3-bottom">
+                    © 2024 Your Name · Web Developer · Built with HTML, CSS & Passion
+                </div>
+            </footer>
+        </div>
+
+        <!-- FOOTER EXAMPLE 4 -->
+        <div class="footer-example">
+            <div class="example-label">Style 04 — Brutalist Grid</div>
+            <footer class="footer-4">
+                <div class="footer-4-grid">
+                    <div class="footer-4-cell">
+                        <h3>About</h3>
+                        <a href="#story">My Story</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#resume">Resume</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="footer-4-cell">
+                        <h3>Work</h3>
+                        <a href="#projects">All Projects</a>
+                        <a href="#web">Web Apps</a>
+                        <a href="#design">Design</a>
+                        <a href="#code">Code</a>
+                    </div>
+                    
+                    <div class="footer-4-cell">
+                        <h3>Social</h3>
+                        <a href="#linkedin">LinkedIn</a>
+                        <a href="#github">GitHub</a>
+                        <a href="#twitter">Twitter</a>
+                        <a href="#codepen">CodePen</a>
+                    </div>
+                    
+                    <div class="footer-4-cell">
+                        <h3>Contact</h3>
+                        <a href="mailto:you@email.com">Email</a>
+                        <a href="tel:555-1234">Phone</a>
+                        <a href="#form">Message</a>
+                        <a href="#calendar">Schedule</a>
+                    </div>
+                </div>
+                
+                <div class="footer-4-bottom">
+                    <span>© 2024 Your Name</span>
+                    <div class="social-links">
+                        <a href="#">IN</a>
+                        <a href="#">GH</a>
+                        <a href="#">𝕏</a>
+                        <a href="#">@</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

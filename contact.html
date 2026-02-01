@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/components.css">
+		<link rel="stylesheet" href="css/style.css">
+
 		<title>Contact - Tristan Thomas's Portfolio</title>
 	</head>
 	<body>
@@ -22,6 +25,48 @@
 		<hr />
 		<main>
 			<!-- Main content -->
+			<section id="get-in-touch">
+				<h1>Get In Touch</h1>
+				<p class="subheading">I'd love to hear from you!</p>
+			</section>
+
+			<!--Contact Form-->
+
+			<section id="contact-section">
+				<form action="" method="post" id="contact-section-form">
+					<fieldset id="contact-section-form-wraper">
+						<fieldset id="contact-section-form-inputs">
+            <legend>Your Info</legend>
+              <label for="name" class="contact-section-form-inputs-label" id="contact-section-form-inputs-name-label">Your Name:</label>
+              <input type="text" name="name" class="contact-section-form-inputs-input contact-section-form-inputs-text-input" id="contact-section-form-inputs-name-input" required>
+              <label for="email" class="contact-section-form-inputs-label" id="contact-section-form-inputs-email-label">Your Email:</label>
+              <input type="email" name="email" class="contact-section-form-inputs-input contact-section-form-inputs-email-input" id="contact-section-form-inputs-email-input" required>
+              <label for="tel" class="contact-section-form-inputs-label" id="contact-section-form-inputs-tel-label">Your Phone:</label>
+              <input type="tel" name="tel" class="contact-section-form-inputs-input contact-section-form-inputs-tel-input" id="contact-section-form-inputs-tel-input" required>
+          </fieldset>
+          <fieldset id="contact-section-form-messages">
+            <legend>Your Message</legend>
+              <label for="subject" class="contact-section-form-inputs-label" id="contact-section-form-inputs-subject-label">Subject:</label>
+              <input type="text" name="subject" class="contact-section-form-inputs-input contact-section-form-inputs-text-input" id="contact-section-form-inputs-subject-input" required>
+              <label for="message" class="contact-section-form-inputs-label" id="contact-section-form-inputs-message-label">message:</label>
+              <textarea name="message" id="contact-section-form-inputs-message-textarea" rows="20" cols="40" required></textarea>
+          </fieldset>
+          <button type="submit" id="contact-section-form-submit-button" class="submit-button">Send Message</button>
+          </fieldset>
+          <div id="my-contact-info">
+            <h2>Contact Info</h2>
+            <dl id="my-contact-info-dl">
+              <dt id="my-contact-info-dl-dt-email">Email:</dt>
+              <dd id="my-contact-info-dl-dl-email"><a href="mailto:tjtwork@proton.me">tjtwork@proton.me</a></dd>
+              <dt id="my-contact-info-dl-dt-tel">Phone:</dt>
+              <dd id="my-contact-info-dl-dl-email"><a href="tel:12086272791">+1 (208) 627-2791</a></dd>
+              <dt id="my-contact-info-dl-dt-loc">Location:</dt>
+              <dd id="my-contact-info-dl-dl-email">Bonners Ferry, Idaho</dd>
+              <dt id="my-contact-info-dl-dt-response">Response Time:</dt>
+              <dd id="my-contact-info-dl-dl-email">Within 2 business days.</dd>
+            </dl>
+          </div>
+			</section>
 		</main>
 		<hr />
 		<footer>
